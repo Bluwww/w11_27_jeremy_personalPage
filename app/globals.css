@@ -1,17 +1,36 @@
 @import "tailwindcss";
 
+/* Varian "dark:" untuk Tailwind: aktif saat <html data-theme="dark">.
+   Dipakai ThemeToggle untuk menukar ikon matahari/bulan lewat CSS (tanpa menunggu JavaScript, jadi tanpa kedip). */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 /* ============================================================
    TEMA WARNA: didefinisikan SEKALI di sini, lalu dipakai di semua halaman
    lewat class Tailwind, misalnya bg-lagoon, text-ink, bg-sun.
    (Tailwind v4: variabel --color-xxx otomatis menjadi class bg-xxx / text-xxx / border-xxx)
+
+   Nilai di bawah adalah TEMA TERANG (bawaan). Tema gelap menimpa nilainya di blok
+   html[data-theme="dark"] di bagian bawah file ini.
+
+   Warna dipecah berdasarkan PERAN (bukan nama warna), karena satu warna bisa
+   berubah arah di mode gelap:
+   - ink     = warna TEKS utama (gelap di mode terang, terang di mode gelap)
+   - deep    = latar blok gelap (footer, kartu Contact, header tabel, menu aktif); teks di atasnya selalu putih
+   - surface = latar kartu (putih di mode terang, teal gelap di mode gelap)
+   - night   = warna TETAP gelap di kedua tema, untuk teks di atas latar kuning/putih
    ============================================================ */
 @theme {
   --color-paper: #f4f9f8;       /* latar halaman: putih kehijauan sangat muda */
-  --color-ink: #0f2a33;         /* teks utama & blok gelap: biru-teal tua */
-  --color-lagoon: #0e7c86;      /* warna utama (teal): tombol, link, aksen */
+  --color-ink: #0f2a33;         /* teks utama: biru-teal tua */
+  --color-surface: #ffffff;     /* latar kartu & header */
+  --color-deep: #0f2a33;        /* latar blok gelap (teks di atasnya selalu putih) */
+  --color-night: #0f2a33;       /* TETAP gelap di kedua tema: teks di atas sun / putih */
+  --color-lagoon: #0e7c86;      /* warna utama (teal): latar tombol & kartu (teks putih di atasnya) */
   --color-lagoon-dark: #0a5c64; /* teal lebih gelap untuk efek hover */
-  --color-mist: #d9efee;        /* teal sangat muda untuk latar chip & tabel */
-  --color-sun: #ffc83d;         /* kuning cerah: aksen yang mencolok */
+  --color-link: #0e7c86;        /* teal untuk TEKS link/aksen (di mode gelap dibuat lebih terang) */
+  --color-mist: #d9efee;        /* teal sangat muda untuk latar chip & pil menu */
+  --color-mist-ink: #0a5c64;    /* teks di atas latar mist */
+  --color-sun: #ffc83d;         /* kuning cerah: aksen yang mencolok (sama di kedua tema) */
   --color-sun-soft: #fff3cc;    /* kuning pucat untuk latar kutipan */
 }
 
@@ -22,12 +41,29 @@
 }
 
 html {
-  /* Paksa tema terang agar warna konsisten di semua perangkat */
+  /* Beritahu browser: tema terang. Mengatur warna scrollbar & kontrol bawaan browser */
   color-scheme: light;
 }
 
-/* Garis fokus yang jelas untuk pengguna keyboard (aksesibilitas) */
+/* TEMA GELAP: aktif saat <html data-theme="dark"> (diatur oleh script awal di layout.tsx
+   dan tombol ThemeToggle). Cukup menimpa variabel warna; semua class Tailwind ikut berubah. */
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-paper: #0a171b;
+  --color-ink: #e8f3f2;
+  --color-surface: #11262c;
+  --color-deep: #1c4652;
+  --color-link: #5fd4dc;
+  --color-mist: #153640;
+  --color-mist-ink: #a6e8ec;
+  --color-sun-soft: #3a3218;
+  /* night, lagoon, lagoon-dark, dan sun sengaja tidak diubah: kontrasnya sudah aman di kedua tema */
+}
+
+/* Garis fokus yang jelas untuk pengguna keyboard (aksesibilitas).
+   Memakai --color-link agar tetap terlihat di mode terang maupun gelap */
 :focus-visible {
-  outline: 3px solid #0e7c86;
+  outline: 3px solid var(--color-link);
   outline-offset: 3px;
 }

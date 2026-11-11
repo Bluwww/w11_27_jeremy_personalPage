@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "About Me | Jeremy Christian",
+    "description": "Website pribadi About Me untuk tugas kuliah Pemrograman Web."
+  },
+  "nav": {
+    "ariaLabel": "Navigasi utama",
+    "home": "Home",
+    "about": "About",
+    "hobbies": "Hobbies",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "menuOpen": "Menu",
+    "menuClose": "Tutup",
+    "switchLanguage": "Ganti bahasa ke English",
+    "darkMode": "Mode gelap"
+  },
+  "footer": {
+    "copyright": "© 2026 Dibuat dengan Next.js & Tailwind CSS."
+  },
+  "home": {
+    "title": "Halo, saya Jeremy Christian",
+    "tagline": "Mahasiswa Informatika yang suka membangun hal-hal kecil menjadi berguna.",
+    "ctaAbout": "Kenali saya",
+    "ctaGallery": "Lihat galeri",
+    "photoAlt": "Foto profil Jeremy: ilustrasi karakter anime berwajah garang dengan emoji tertawa dan tulisan Ijin Tampil",
+    "exploreTitle": "Jelajahi website ini",
+    "cards": {
+      "about": {
+        "title": "About",
+        "desc": "Biografi, riwayat pendidikan, dan keahlian yang sedang saya pelajari.",
+        "cta": "Baca selengkapnya"
+      },
+      "hobbies": {
+        "title": "Hobbies",
+        "desc": "Game, renang, dan film favorit.",
+        "cta": "Lihat hobi"
+      },
+      "gallery": {
+        "title": "Gallery",
+        "desc": "Koleksi foto dan momen favorit.",
+        "cta": "Buka galeri"
+      },
+      "contact": {
+        "title": "Contact",
+        "desc": "Ingin berdiskusi atau berkolaborasi? Hubungi saya lewat email atau media sosial.",
+        "cta": "Hubungi saya"
+      }
+    }
+  },
+  "about": {
+    "title": "Tentang saya",
+    "bioTitle": "Biografi",
+    "bio": "Saya Jeremy Christian, mahasiswa semester 3 yang tertarik pada pengembangan web dan pemrograman. Saya senang belajar teknologi baru dan menerapkannya dalam proyek nyata.",
+    "quoteTitle": "Quote favorit",
+    "quote": "Satu-satunya cara untuk melakukan pekerjaan hebat adalah mencintai apa yang kamu lakukan.",
+    "quoteAuthor": "Steve Jobs",
+    "quoteSource": "pidato di Stanford, 2005",
+    "educationTitle": "Riwayat pendidikan",
+    "education": [
+      { "school": "SD Karitas 3", "years": "2008 – 2014" },
+      { "school": "SMP Karitas 3", "years": "2014 – 2017" },
+      { "school": "SMA Karitas 3", "years": "2017 – 2020" },
+      {
+        "school": "S1 Informatika, Universitas Katolik Widya Mandala Surabaya",
+        "years": "2023 – sekarang"
+      }
+    ],
+    "skillsTitle": "Keahlian",
+    "skillsCaption": "Daftar keahlian teknis beserta tingkat penguasaannya",
+    "skillsHeaders": {
+      "no": "No",
+      "skill": "Keahlian",
+      "level": "Level",
+      "experience": "Pengalaman"
+    },
+    "skills": [
+      { "name": "HTML & CSS", "level": "Menengah", "intermediate": true, "experience": "1 tahun" },
+      {
+        "name": "JavaScript / TypeScript",
+        "level": "Pemula",
+        "intermediate": false,
+        "experience": "1 tahun"
+      },
+      {
+        "name": "Next.js & Tailwind CSS",
+        "level": "Pemula",
+        "intermediate": false,
+        "experience": "Sedang belajar"
+      },
+      { "name": "Python", "level": "Pemula", "intermediate": false, "experience": "1 tahun" }
+    ]
+  },
+  "hobbies": {
+    "title": "Hobi saya",
+    "intro": "Beberapa hal yang membuat saya tetap semangat di sela kuliah.",
+    "topTitle": "Tiga hobi favorit",
+    "top": [
+      { "title": "Main Game", "desc": "Bermain berbagai macam game dari berbagai genre." },
+      { "title": "Berenang", "desc": "Berenang untuk melepas penat setelah aktivitas fisik." },
+      {
+        "title": "Nonton Film",
+        "desc": "Menonton film favorit untuk melepas penat setelah aktivitas sehari-hari."
+      }
+    ],
+    "otherTitle": "Kegiatan santai lainnya",
+    "other": [
+      "Membaca buku teknologi",
+      "Menonton film dokumenter",
+      "Bersepeda di akhir pekan",
+      "Mencoba kuliner baru"
+    ]
+  },
+  "gallery": {
+    "title": "Galeri foto",
+    "collectionTitle": "Koleksi momen",
+    "photos": [
+      {
+        "alt": "Ilustrasi karakter anime berwajah garang dengan emoji tertawa dan tulisan Ijin Tampil",
+        "caption": "Ijin Tampil"
+      },
+      {
+        "alt": "Seorang pria berjaket biru duduk di atas motor di area berpepohonan dengan tulisan Lepas Kendali",
+        "caption": "Lepas Kendali"
+      },
+      {
+        "alt": "Seorang pria berkaus biru memegang payung di samping mobil dengan tulisan loh ya boleh lah",
+        "caption": "Loh ya boleh wong ditawari"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Hubungi saya",
+    "intro": "Pilih cara yang paling nyaman. Saya biasanya membalas dalam satu hari.",
+    "infoTitle": "Informasi kontak",
+    "email": "Email",
+    "phone": "Telepon / WhatsApp",
+    "location": "Lokasi",
+    "locationValue": "Surabaya, Jawa Timur, Indonesia",
+    "socialTitle": "Media sosial",
+    "socialIntro": "Lihat proyek dan keseharian saya di sini."
+  }
+}

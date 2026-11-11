@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "About Me | Jeremy Christian",
+    "description": "Personal About Me website for a Web Programming university assignment."
+  },
+  "nav": {
+    "ariaLabel": "Main navigation",
+    "home": "Home",
+    "about": "About",
+    "hobbies": "Hobbies",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "menuOpen": "Menu",
+    "menuClose": "Close",
+    "switchLanguage": "Switch language to Bahasa Indonesia",
+    "darkMode": "Dark mode"
+  },
+  "footer": {
+    "copyright": "© 2026 Built with Next.js & Tailwind CSS."
+  },
+  "home": {
+    "title": "Hi, I'm Jeremy Christian",
+    "tagline": "An Informatics student who likes turning small ideas into useful things.",
+    "ctaAbout": "Get to know me",
+    "ctaGallery": "View gallery",
+    "photoAlt": "Jeremy's profile picture: an illustration of a fierce-looking anime character with a laughing emoji and the text Ijin Tampil",
+    "exploreTitle": "Explore this website",
+    "cards": {
+      "about": {
+        "title": "About",
+        "desc": "My biography, education history, and the skills I'm currently learning.",
+        "cta": "Read more"
+      },
+      "hobbies": {
+        "title": "Hobbies",
+        "desc": "Games, swimming, and favorite movies.",
+        "cta": "See my hobbies"
+      },
+      "gallery": {
+        "title": "Gallery",
+        "desc": "A collection of favorite photos and moments.",
+        "cta": "Open gallery"
+      },
+      "contact": {
+        "title": "Contact",
+        "desc": "Want to talk or collaborate? Reach me by email or on social media.",
+        "cta": "Get in touch"
+      }
+    }
+  },
+  "about": {
+    "title": "About me",
+    "bioTitle": "Biography",
+    "bio": "I'm Jeremy Christian, a third-semester student interested in web development and programming. I enjoy learning new technologies and applying them in real projects.",
+    "quoteTitle": "Favorite quote",
+    "quote": "The only way to do great work is to love what you do.",
+    "quoteAuthor": "Steve Jobs",
+    "quoteSource": "Stanford commencement speech, 2005",
+    "educationTitle": "Education history",
+    "education": [
+      { "school": "SD Karitas 3 (Elementary School)", "years": "2008 – 2014" },
+      { "school": "SMP Karitas 3 (Junior High School)", "years": "2014 – 2017" },
+      { "school": "SMA Karitas 3 (Senior High School)", "years": "2017 – 2020" },
+      {
+        "school": "Bachelor's in Informatics, Widya Mandala Catholic University Surabaya",
+        "years": "2023 – present"
+      }
+    ],
+    "skillsTitle": "Skills",
+    "skillsCaption": "List of technical skills and their proficiency levels",
+    "skillsHeaders": {
+      "no": "No",
+      "skill": "Skill",
+      "level": "Level",
+      "experience": "Experience"
+    },
+    "skills": [
+      { "name": "HTML & CSS", "level": "Intermediate", "intermediate": true, "experience": "1 year" },
+      {
+        "name": "JavaScript / TypeScript",
+        "level": "Beginner",
+        "intermediate": false,
+        "experience": "1 year"
+      },
+      {
+        "name": "Next.js & Tailwind CSS",
+        "level": "Beginner",
+        "intermediate": false,
+        "experience": "Currently learning"
+      },
+      { "name": "Python", "level": "Beginner", "intermediate": false, "experience": "1 year" }
+    ]
+  },
+  "hobbies": {
+    "title": "My hobbies",
+    "intro": "A few things that keep me motivated between classes.",
+    "topTitle": "Top three hobbies",
+    "top": [
+      { "title": "Playing Games", "desc": "Playing all kinds of games across many genres." },
+      { "title": "Swimming", "desc": "Swimming to unwind after physical activity." },
+      {
+        "title": "Watching Movies",
+        "desc": "Watching my favorite movies to unwind after a busy day."
+      }
+    ],
+    "otherTitle": "Other relaxing activities",
+    "other": [
+      "Reading tech books",
+      "Watching documentaries",
+      "Cycling on weekends",
+      "Trying new food"
+    ]
+  },
+  "gallery": {
+    "title": "Photo gallery",
+    "collectionTitle": "Collection of moments",
+    "photos": [
+      {
+        "alt": "Illustration of a fierce-looking anime character with a laughing emoji and the text Ijin Tampil",
+        "caption": "Ijin Tampil"
+      },
+      {
+        "alt": "A man in a blue jacket sitting on a motorbike in a tree-lined area with the text Lepas Kendali",
+        "caption": "Lepas Kendali"
+      },
+      {
+        "alt": "A man in a blue shirt holding an umbrella next to a car with the text loh ya boleh lah",
+        "caption": "Loh ya boleh wong ditawari"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact me",
+    "intro": "Pick whichever way is most comfortable. I usually reply within a day.",
+    "infoTitle": "Contact information",
+    "email": "Email",
+    "phone": "Phone / WhatsApp",
+    "location": "Location",
+    "locationValue": "Surabaya, East Java, Indonesia",
+    "socialTitle": "Social media",
+    "socialIntro": "See my projects and everyday life here."
+  }
+}
